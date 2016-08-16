@@ -15,9 +15,3 @@ build_script:
 - appveyor AddMessage "Reboot complete" -Category Information
 - bcdedit | findstr /i "testsigning"
 - tools\build.bat %CONFIGURATION%
-
-test_script:
-- for %%f in ("build\VStudio\build\%CONFIGURATION%\winfsp-*.msi") do start /wait msiexec /i %%f /qn INSTALLLEVEL=1000
-- tools\nmake-ext-test.bat %CONFIGURATION%
-- tools\run-tests.bat %CONFIGURATION%
-- verifier /query
