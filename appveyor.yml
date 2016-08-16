@@ -6,7 +6,6 @@ environment:
 install:
 - git submodule update --init --recursive
 - appveyor AddMessage "Change boot configuration and reboot" -Category Information
-- verifier /standard /driver winfsp-x64.sys
 - bcdedit /set testsigning on
 - ps: Restart-Computer -Force
 - ps: Start-Sleep -s 10
