@@ -1,3 +1,5 @@
+image: test-vs2015-gce
+
 version: '{build}'
 
 environment:
