@@ -7,7 +7,7 @@ install:
 - git submodule update --init --recursive
 - appveyor AddMessage "Change boot configuration and reboot" -Category Information
 - bcdedit /set testsigning on
-- ps: Start-Sleep -s 5
+- ps: Start-Sleep -s 10
 - ps: Restart-Computer -Force
 - ps: Start-Sleep -s 10
 
