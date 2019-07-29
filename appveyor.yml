@@ -4,7 +4,6 @@ environment:
   CONFIGURATION: Release
 
 install:
-install:
 - ps: |
     Write-Host "Installing WDK 1903 (10.0.18362.1)..." -ForegroundColor Cyan
     Write-Host "Downloading..."
