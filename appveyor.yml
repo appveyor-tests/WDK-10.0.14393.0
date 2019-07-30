@@ -3,6 +3,7 @@ version: '{build}'
 environment:
   CONFIGURATION: Release
 
+install:
 #hack to make WDK 1903 work on VS2015
 - ps: |
     [xml]$targets = get-content "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.Common.targets"
