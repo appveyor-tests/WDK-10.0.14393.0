@@ -1,4 +1,3 @@
-$ErrorActionPreference = "Stop"
 [xml]$targets = get-content "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.Common.targets"
 $usingTask = $targets.ChildNodes[1].UsingTask | ? {$_.TaskName -eq "ValidateNTTargetVersion"}
 $usingTask.AssemblyFile = '$(WDKContentRoot)build\bin\Microsoft.DriverKit.Build.Tasks.16.0.dll'
