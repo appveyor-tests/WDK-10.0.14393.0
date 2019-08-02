@@ -7,3 +7,4 @@ appveyor AddMessage "Change boot configuration and reboot" -Category Information
 bcdedit /set testsigning on
 Start-Sleep -s 5
 Restart-Computer -Force
+Start-Sleep -s 10
