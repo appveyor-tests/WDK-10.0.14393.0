@@ -1,4 +1,3 @@
-$ErrorActionPreference = "Stop"
 $env:CONFIGURATION = "Release"
 appveyor AddMessage "Reboot complete" -Category Information
 bcdedit | findstr /i "testsigning"
